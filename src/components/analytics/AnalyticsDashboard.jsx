@@ -746,7 +746,7 @@ const AnalyticsDashboard = () => {
 
   // Get stats data based on selections
   const getStatsData = () => {
-    const key = timePeriod === 'Annually' ? selectedPeriod : `${selectedPeriod}_${selectedYear}`;
+    const key = timePeriod === 'Annually' ? `${selectedPeriod}_${selectedPeriod}` : `${selectedPeriod}_${selectedYear}`;
     
     if (timePeriod === 'Monthly') {
       const monthStats = {
