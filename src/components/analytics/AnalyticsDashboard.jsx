@@ -40,12 +40,15 @@ ChartJS.register(
 );
 
 // Icons
-const DollarSignIcon = () => (
-  <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-    <line x1="12" y1="1" x2="12" y2="23"></line>
-    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+const RupeeIcon = () => (
+  <svg
+    className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+    <path d="M6 4h12" />
+    <path d="M6 8h12" />
+    <path d="M6 4h6a4 4 0 0 1 0 8H6l9 8" />
   </svg>
 );
+
 
 const TrendingUpIcon = () => (
   <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -1286,7 +1289,7 @@ const AnalyticsDashboard = () => {
             value={statsData.totalRevenue}
             description={`This ${timePeriod.toLowerCase().slice(0, -2)}`}
             trend={statsData.trends.revenue}
-            icon={<DollarSignIcon />}
+            icon={<RupeeIcon />}
           />
           <StatCard
             title="Total Expense"
