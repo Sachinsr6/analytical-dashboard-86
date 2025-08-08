@@ -895,6 +895,43 @@ const AnalyticsDashboard = () => {
             profit: { value: 14.8, isPositive: true },
             cashflow: { value: 11.7, isPositive: true }
           }
+        },
+        // 2025 Monthly Stats
+        'January_2025': {
+          totalRevenue: '₹24,500',
+          totalExpense: '₹24,300',
+          netProfit: '₹200',
+          netCashflow: '₹43,200',
+          trends: {
+            revenue: { value: 38.0, isPositive: true },
+            expense: { value: 18.5, isPositive: false },
+            profit: { value: -92.0, isPositive: false },
+            cashflow: { value: 39.4, isPositive: true }
+          }
+        },
+        'February_2025': {
+          totalRevenue: '₹27,000',
+          totalExpense: '₹26,500',
+          netProfit: '₹500',
+          netCashflow: '₹47,300',
+          trends: {
+            revenue: { value: 33.3, isPositive: true },
+            expense: { value: 51.4, isPositive: false },
+            profit: { value: -81.8, isPositive: false },
+            cashflow: { value: 34.2, isPositive: true }
+          }
+        },
+        'March_2025': {
+          totalRevenue: '₹29,200',
+          totalExpense: '₹28,500',
+          netProfit: '₹700',
+          netCashflow: '₹51,700',
+          trends: {
+            revenue: { value: 27.0, isPositive: true },
+            expense: { value: 44.3, isPositive: false },
+            profit: { value: -78.5, isPositive: false },
+            cashflow: { value: 27.7, isPositive: true }
+          }
         }
       };
       return monthStats[key] || monthStats['January_2024'];
@@ -1080,6 +1117,55 @@ const AnalyticsDashboard = () => {
             expense: { value: 11.4, isPositive: false },
             profit: { value: 14.3, isPositive: true },
             cashflow: { value: 12.4, isPositive: true }
+          }
+        },
+        // 2025 Quarterly Stats
+        'Q1_2025': {
+          totalRevenue: '₹388,000',
+          totalExpense: '₹246,000',
+          netProfit: '₹142,000',
+          netCashflow: '₹388,000',
+          trends: {
+            revenue: { value: 54.0, isPositive: true },
+            expense: { value: 51.9, isPositive: false },
+            profit: { value: 57.8, isPositive: true },
+            cashflow: { value: 54.0, isPositive: true }
+          }
+        },
+        'Q2_2025': {
+          totalRevenue: '₹422,000',
+          totalExpense: '₹264,000',
+          netProfit: '₹158,000',
+          netCashflow: '₹422,000',
+          trends: {
+            revenue: { value: 47.6, isPositive: true },
+            expense: { value: 44.3, isPositive: false },
+            profit: { value: 53.4, isPositive: true },
+            cashflow: { value: 47.6, isPositive: true }
+          }
+        },
+        'Q3_2025': {
+          totalRevenue: '₹456,000',
+          totalExpense: '₹282,000',
+          netProfit: '₹174,000',
+          netCashflow: '₹456,000',
+          trends: {
+            revenue: { value: 42.5, isPositive: true },
+            expense: { value: 38.9, isPositive: false },
+            profit: { value: 48.7, isPositive: true },
+            cashflow: { value: 42.5, isPositive: true }
+          }
+        },
+        'Q4_2025': {
+          totalRevenue: '₹490,000',
+          totalExpense: '₹300,000',
+          netProfit: '₹190,000',
+          netCashflow: '₹490,000',
+          trends: {
+            revenue: { value: 53.1, isPositive: true },
+            expense: { value: 33.3, isPositive: false },
+            profit: { value: 84.5, isPositive: true },
+            cashflow: { value: 53.1, isPositive: true }
           }
         }
       };
