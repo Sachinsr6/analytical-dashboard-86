@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Finance Dashboard</h1>
+        </header>
+        
+        <div class="summary-cards">
+            <div class="card">
+                <h3>Total Revenue</h3>
+                <p class="amount revenue" id="totalRevenue">₹0</p>
+            </div>
+            <div class="card">
+                <h3>Total Expenses</h3>
+                <p class="amount expense" id="totalExpenses">₹0</p>
+            </div>
+            <div class="card">
+                <h3>Net Profit</h3>
+                <p class="amount profit" id="netProfit">₹0</p>
+            </div>
+        </div>
+        
+        <div class="charts-container">
+            <div class="chart-wrapper">
+                <h3>Monthly Revenue vs Expenses</h3>
+                <canvas id="revenueExpenseChart"></canvas>
+            </div>
+            <div class="chart-wrapper">
+                <h3>Net Profit Trend</h3>
+                <canvas id="profitTrendChart"></canvas>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
